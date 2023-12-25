@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-25T10:25:22 EST" name="Default suite" finished-at="2023-12-25T10:25:31 EST" duration-ms="9471">
+    <groups>
+    </groups>
+    <test started-at="2023-12-25T10:25:22 EST" name="Default test" finished-at="2023-12-25T10:25:31 EST" duration-ms="9471">
+      <class name="com.qa.tn.testCases.AddToCartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.tn.testCases.AddToCartTest@70e9c95d]" started-at="2023-12-25T10:25:22 EST" name="setUp" finished-at="2023-12-25T10:25:27 EST" duration-ms="5826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAddValidProductToCart()[pri:1, instance:com.qa.tn.testCases.AddToCartTest@70e9c95d]" started-at="2023-12-25T10:25:27 EST" name="verifyAddValidProductToCart" finished-at="2023-12-25T10:25:31 EST" duration-ms="3375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddValidProductToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tn.testCases.AddToCartTest@70e9c95d]" started-at="2023-12-25T10:25:31 EST" name="tearDown" finished-at="2023-12-25T10:25:31 EST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.tn.testCases.AddToCartTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
