@@ -26,21 +26,21 @@ public class SearchProductTest extends TestBase {
 	@BeforeMethod
 	public void setUp() {
 		driver = initializeBrowserAndOpenApplication(prop.getProperty("browser"));
+		homepage = new HomePage(driver);
 	}
 
 	@Test(priority = 1)
 	public void verifyValidProductSearch() {
-		homepage = new HomePage(driver);
 		homepage.enterProductDetail(dataProp.getProperty("validProduct"));
 		searchproductpage = homepage.clickOnSearchButton();
 		Assert.assertTrue(searchproductpage.verifyDisplayStatusOfValidProduct());
 		validproductpage = searchproductpage.clickOnValidProductLink();
+		
 		Assert.assertTrue(validproductpage.verifyDisplayStatusOfValidProductDescription());
 	}
 
 	@Test(priority = 2)
 	public void verifyInvalidProductSearch() {
-		homepage = new HomePage(driver);
 		homepage.enterProductDetail(dataProp.getProperty("invalidProduct"));
 		searchproductpage = homepage.clickOnSearchButton();
 		Assert.assertTrue(searchproductpage.verifyDisplayStatusOfInvalidProduct());
@@ -48,7 +48,6 @@ public class SearchProductTest extends TestBase {
 
 	@Test(priority = 3)
 	public void verifyNoProductSearch() {
-		homepage = new HomePage(driver);
 		searchproductpage = homepage.clickOnSearchButton();
 		Assert.assertTrue(searchproductpage.verifyDisplayStatusOfInvalidProduct());
 	}
